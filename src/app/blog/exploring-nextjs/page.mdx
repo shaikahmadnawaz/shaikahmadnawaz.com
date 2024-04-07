@@ -1,4 +1,4 @@
-import BlogLayout from "@/components/blog-layout";
+import Blog from "../blog";
 export const blog = {
   author: "Nawaz",
   date: "2024-04-07",
@@ -9,7 +9,7 @@ export const blog = {
 
 export const metadata = { title: blog.title, description: blog.description };
 
-export default (props) => <BlogLayout blog={blog} {...props} />;
+export default (props) => <Blog blog={blog} {...props} />;
 
 ## Introduction
 
