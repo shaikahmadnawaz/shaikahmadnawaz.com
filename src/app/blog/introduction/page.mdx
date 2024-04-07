@@ -1,0 +1,14 @@
+import BlogLayout from "@/components/blog-layout";
+export const blog = {
+  author: "Nawaz",
+  date: "2024-04-07",
+  title: "Introduction",
+  description:
+    "This notebook is a simple example of how to use the `pandas` library to read and manipulate data. We will use the `pandas` library to read a CSV file and perform some basic operations on the data.",
+};
+
+export const metadata = { title: blog.title, description: blog.description };
+
+export default (props) => <BlogLayout blog={blog} {...props} />;
+
+This notebook is a simple example of how to use the `pandas` library to read and manipulate data. We will use the `pandas` library to read a CSV file and perform some basic operations on the data.
