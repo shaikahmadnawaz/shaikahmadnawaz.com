@@ -29,8 +29,6 @@ const BlogLayout = ({
               <span className="h-4 w-0.5 rounded-full bg-zinc-500" />
               <span className="ml-3">{formatDate(blog.date)}</span>
             </time>
-
-            <p className="mt-4 text-muted-foreground">{blog.author}</p>
           </header>
           <Prose className="mt-8" data-mdx-content>
             {children}
