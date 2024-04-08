@@ -14,7 +14,7 @@ const Blog = ({
   let router = useRouter();
 
   return (
-    <div className="container mx-auto relative overflow-hidden py-24 sm:py-32">
+    <div className="mx-auto relative overflow-hidden py-24 sm:py-32">
       <header className="flex flex-col">
         <h1 className="mt-6 text-4xl font-bold tracking-tight sm:text-5xl">
           {blog.title}

@@ -6,7 +6,10 @@ import remarkGfm from "remark-gfm";
 const nextConfig = {
   pageExtensions: ["js", "jsx", "ts", "tsx", "mdx"],
   images: {
-    domains: ["s3.ap-south-1.amazonaws.com"],
+    remotePatterns: [ {protocol: 'https',
+    hostname: 's3.ap-south-1.amazonaws.com',
+    port: '',
+  }],
   },
 };
 

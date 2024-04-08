@@ -18,8 +18,8 @@ const Blog = ({ blog }: { blog: BlogWithSlug }) => {
             src={
               "https://s3.ap-south-1.amazonaws.com/shaikahmadnawaz.com/A+Beginner's+Journey+into+GraphQL.png"
             }
-            width={300}
-            height={300}
+            width={400}
+            height={400}
             alt="Picture of the author"
           />
 
