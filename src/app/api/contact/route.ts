@@ -1,7 +1,7 @@
 import { resend } from "@/lib/resend";
 import { NextResponse } from "next/server";
 import { ReceiveEmailTemplate } from "@/emails/receive-template";
-import { ReplyEmailTemplate } from "@/emails/reply-template";
+// import { ReplyEmailTemplate } from "@/emails/reply-template";
 
 export async function POST(request: Request) {
   const { email, message } = await request.json();
