@@ -3,6 +3,8 @@ import { DM_Sans } from "next/font/google";
 import "./globals.css";
 import { cn } from "@/lib/utils";
 import { ThemeProvider } from "@/components/theme-provider";
+import Navbar from "@/components/navbar";
+import Footer from "@/components/footer";
 
 const dmSans = DM_Sans({ subsets: ["latin"] });
 
@@ -52,7 +54,7 @@ export default function RootLayout({
     <html lang="en" suppressHydrationWarning>
       <body
         className={cn(
-          "min-h-screen bg-background antialiased",
+          "bg-background antialiased flex w-full flex-col md:flex-row mx-4 lg:mx-auto",
           dmSans.className
         )}
       >
@@ -62,7 +64,12 @@ export default function RootLayout({
           enableSystem
           disableTransitionOnChange
         >
-          {children}
+          <main className="flex-auto w-full min-w-0 flex flex-col px-2 md:px-0">
+            {" "}
+            <Navbar />
+            {children}
+            <Footer />
+          </main>
         </ThemeProvider>
       </body>
     </html>
