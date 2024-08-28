@@ -54,7 +54,7 @@ export default function RootLayout({
     <html lang="en" suppressHydrationWarning>
       <body
         className={cn(
-          "bg-background antialiased flex w-full flex-col md:flex-row",
+          "antialiased flex w-full flex-col md:flex-row",
           dmSans.className
         )}
       >
@@ -64,11 +64,11 @@ export default function RootLayout({
           enableSystem
           disableTransitionOnChange
         >
-          <main className="flex-auto w-full min-w-0 flex flex-col px-2 md:px-0">
+          <main className="flex-auto w-full min-w-0 flex flex-col">
             {" "}
-            {/* <Navbar /> */}
+            <Navbar />
             {children}
-            {/* <Footer /> */}
+            <Footer />
           </main>
         </ThemeProvider>
       </body>

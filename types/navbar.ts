@@ -1,5 +1,5 @@
 export type TNavItems = {
   title: string;
-  href?: string;
+  href: string;
   external?: boolean;
 }[];
